@@ -67,7 +67,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
                 <Spinner
-                    android:id="@+id/spinner"
+                    android:id="@+id/spnPizza"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -76,7 +76,7 @@
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <Spinner
-                    android:id="@+id/spinner2"
+                    android:id="@+id/spnIngre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -89,8 +89,9 @@
                 android:id="@+id/button6"
                 android:layout_width="329dp"
                 android:layout_height="50dp"
-                android:text="Calcular Entrega"
                 android:backgroundTint="#FF9800"
+                android:onClick="CalcularEntrega"
+                android:text="Calcular Entrega"
                 android:textColor="#FFFFFF"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -130,7 +131,7 @@
                 app:layout_constraintVertical_bias="0.509" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/tvTotalSuma"
                 android:layout_width="249dp"
                 android:layout_height="35dp"
                 android:gravity="center"
